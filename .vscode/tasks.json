@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build worker",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/worker/dotnet-bitcoinparser.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build master",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/master/master.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }        
+    ]
+}
